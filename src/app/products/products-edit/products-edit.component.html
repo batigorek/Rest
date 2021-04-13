@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <form [formGroup]="menuForm">
+        <div class="form-group">
+            <label for="name">Название</label>
+            <input type="text" class="form-control"
+            formConctrolName="name" id="name">
+        </div>
+        <div class="form-group">
+         <label for="volume">Объём на складе</label>
+         <input type="text" class="form-control"
+         formConctrolName="volume" id="volume">
+     </div>
+        <div class="form-group">
+         <label for="unit">Единица измерения</label>
+         <input type="text" class="form-control"
+         formConctrolName="unit" id="unit">
+     </div>
+        <div class="form-group">
+         <label for="data">Дата производства</label>
+         <input type="text" class="form-control"
+         formConctrolName="data" id="data">
+     </div>
+        <div class="form-group">
+         <label for="until">Годен до:</label>
+         <input type="text" class="form-control"
+         formConctrolName="until" id="until">
+     </div>
+     <button class="btn btn-primary mr-4" [disabled]="menuForm.invalid">Сохранить</button>
+     <button class="btn btn-danger" *ngIf="id != null">Удалить</button>
+    </form>
+ </div>

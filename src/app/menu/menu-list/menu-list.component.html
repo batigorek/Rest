@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" [style.wight]="'20%'">Название</th>
+            <th scope="col" [style.wight]="'10%'">Вес готового блюда (г)</th>
+            <th scope="col" [style.wight]="'15%'">Калорийность (Ккал)</th>
+            <th scope="col" [style.wight]="'40%'">Ингредиенты</th>
+            <th scope="col" [style.wight]="'15%'">Время приготовления (мин)</th>
+            <th scope="col" [style.wight]="'80px'">Цена (руб)</th>
+            <th scope="col" [style.wight]="'80px'"></th>
+            <th scope="col" [style.wight]="'80px'">
+                <div class="btn btn-primary"
+                (click)="onAddMenu()">
+                    Добавить блюдо
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of menu">
+            <td>{{item.name}}</td>
+            <td>{{item.weight}}</td>
+            <td>{{item.calorie}}</td>
+            <td>{{item.ingredients}}</td>
+            <td>{{item.time}}</td>
+            <td>{{item.price}}</td>
+            <td><button class="btn btn-outline-primary btn-sm"
+                (click)="onLinkMenu(item.id)">Изменить</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

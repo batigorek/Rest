@@ -5,5 +5,53 @@
       "title": "json-server",
       "author": "typicode"
     }
+  ],
+  "menu": [
+    {
+      "name": "Яичница",
+      "category": 1,
+      "weight": 150,
+      "calorie": 250,
+      "ingredients": "Яйцо, масло, приправы",
+      "time": 10,
+      "price": 100,
+      "id": 2
+    },
+    {
+      "name": "Сок",
+      "category": 3,
+      "weight": 400,
+      "calorie": 180,
+      "ingredients": "Сок",
+      "time": 2,
+      "price": 100,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "json-server",
+      "volume": 20,
+      "unit": "20",
+      "data": 20,
+      "until": 20,
+      "id": 1
+    },
+    {
+      "name": "json-server",
+      "volume": 20,
+      "unit": "20",
+      "data": 20,
+      "until": 20,
+      "id": 2
+    },
+    {
+      "name": "json-server",
+      "volume": 20,
+      "unit": "20",
+      "data": 20,
+      "until": 20,
+      "id": 3
+    }
   ]
 }

@@ -1,0 +1,43 @@
+<div class="container-fluid">
+   <form [formGroup]="menuForm">
+       <div class="form-group">
+           <label for="name">Название</label>
+           <input type="text" class="form-control"
+           formConctrolName="name" id="name">
+       </div>
+       <div class="form-group">
+        <label for="category">Категория</label>
+        <input type="text" class="form-control"
+        formConctrolName="category" id="category">
+    </div>
+       <div class="form-group">
+        <label for="weight">Вес готового блюда (г)</label>
+        <input type="text" class="form-control"
+        formConctrolName="weight" id="weight">
+    </div>
+       <div class="form-group">
+        <label for="calorie">Калории (ккал)</label>
+        <input type="text" class="form-control"
+        formConctrolName="calorie" id="calorie">
+    </div>
+       <div class="form-group">
+        <label for="ingredients">Ингредиенты</label>
+        <input type="text" class="form-control"
+        formConctrolName="ingredients" id="ingredients">
+    </div>
+       <div class="form-group">
+        <label for="time">Время приготовления (мин)</label>
+        <input type="text" class="form-control"
+        formConctrolName="time" id="time">
+    </div>
+       <div class="form-group">
+        <label for="price">Цена (руб)</label>
+        <input type="text" class="form-control"
+        formConctrolName="price" id="price">
+    </div>
+    <button class="btn btn-primary mr-4" [disabled]="menuForm.invalid"
+    (click)="onSave()">Сохранить</button>
+    <button class="btn btn-danger" *ngIf="id != null"
+    (click)="onDelete()">Удалить</button>
+   </form>
+</div>
